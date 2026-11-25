@@ -1,0 +1,33 @@
+{
+  "version": "agent-smoke-v1",
+  "limits": {"task_success_min": 0.9, "route_accuracy_min": 1.0, "slot_accuracy_min": 1.0, "tool_trace_min": 1.0, "permission_min": 1.0, "p95_seconds_max": 10, "tokens_per_task_max": 12000},
+  "cases": [
+    {"id":"supervisor_booking", "scenario":"after_sales", "turns":[
+      {"id":"ask", "text":"R100 路由器的 PON 灯一直亮红灯。请先查故障处理办法，再帮我预约工程师上门维修。时间 2030-01-08 16:00，60分钟。", "tools":[{"name":"consult_product","args":{}},{"name":"prepare_service_appointment","args":{}}], "reply_contains":["光网络工程师林","同意"], "writes":0,"permission":true},
+      {"id":"visitor", "actor":"visitor", "text":"同意", "tools":[], "reply_contains":["没有待确认"], "writes":0,"permission":true},
+      {"id":"different_session", "session":"alternate", "text":"同意", "tools":[], "reply_contains":["没有待确认"], "writes":0,"permission":true},
+      {"id":"ambiguous", "text":"可以预约吗？", "tools":[], "reply_contains":["同意"], "writes":0,"permission":true},
+      {"id":"confirm", "text":"同意", "tools":[], "reply_contains":["预约成功"], "writes":1,"permission":true},
+      {"id":"repeat", "text":"同意", "tools":[], "reply_contains":["没有待确认"], "writes":1,"permission":true},
+      {"id":"owner_history", "text":"请查询我自己的历史服务预约次数。", "tools":[{"name":"analyze_customer_history","args":{}}], "tool_observation":{"total_appointments":1},"writes":1,"permission":true},
+      {"id":"visitor_history", "actor":"visitor", "text":"请查询我自己的历史服务预约次数。", "tools":[{"name":"analyze_customer_history","args":{}}], "tool_observation":{"total_appointments":0},"writes":1,"permission":true}
+    ]},
+    {"id":"supervisor_consult", "scenario":"after_sales", "turns":[
+      {"id":"consult", "text":"我的 P200 打印机出现 E03，是什么意思？请查一下产品手册。", "tools":[{"name":"consult_product","args":{}}],"tool_observation":{"skill":"打印设备"},"reply_contains":["卡纸"],"writes":1,"permission":true}
+    ]},
+    {"id":"slot_booking", "scenario":"appointment", "turns":[
+      {"id":"start", "text":"我想预约按摩", "route":"appointment", "reply_contains":["时间"],"writes":0,"permission":true},
+      {"id":"slots", "text":"2030年1月8日下午2点，做60分钟，指定测试技师甲。", "slot":{"start_time":"2030-01-08 14:00","duration":"60分钟","technician_name":"测试技师甲"},"slot_tool":{"name":"find_technicians","args":{"start_time":"2030-01-08 14:00","duration_minutes":60}},"reply_contains":["测试技师乙","同意"],"writes":0,"permission":true},
+      {"id":"confirm", "text":"好，我同意预约你推荐的测试技师乙。", "reply_contains":["预约成功"],"writes":1,"permission":true},
+      {"id":"propose_change", "text":"把我的预约改到 2030-01-08 16:00", "reply_contains":["14:00","16:00","同意"],"writes":1,"permission":true},
+      {"id":"confirm_change", "text":"同意", "reply_contains":["改约成功"],"writes":2,"permission":true},
+      {"id":"duplicate_change", "text":"同意", "reply_contains":["已处理"],"writes":2,"permission":true}
+    ]},
+    {"id":"appointment_query_route", "scenario":"appointment", "turns":[
+      {"id":"query", "text":"请问按摩房在哪里？", "route":"query", "reply_contains":["咨询机器人"],"writes":2,"permission":true}
+    ]},
+    {"id":"unsupported_route", "scenario":"appointment", "turns":[
+      {"id":"other", "text":"请帮我写一段排序算法代码。", "route":"other", "reply_contains":["暂不支持"],"writes":2,"permission":true}
+    ]}
+  ]
+}

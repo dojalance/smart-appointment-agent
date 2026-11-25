@@ -1,0 +1,1310 @@
+{
+  "dataset_sha256": "35d8ac704b1df03e3c358786064b6593639f21fd775dfe3d4fe3e8ba8ecdadb8",
+  "models": {
+    "0.6b": {
+      "weights_sha256": "9465e63a22add5354d9bb4b99e90117043c7124007664907259bd16d043bb031",
+      "metrics": {
+        "samples": 51,
+        "protocol_percent": 45.09803921568628,
+        "task_correctness_percent": 38.373356694874275,
+        "effective_pass": 0,
+        "mean_latency_seconds": 0.901555990197641,
+        "p95_seconds": 1.4912328500067815,
+        "mean_ttft_seconds": 0.2378347941135586,
+        "mean_decode_tok_per_sec": 131.52785222108466,
+        "by_output_kind": {
+          "final": {
+            "samples": 36,
+            "task_correctness_percent": 45.235271190754425,
+            "effective_pass": 0
+          },
+          "tool_call": {
+            "samples": 15,
+            "task_correctness_percent": 21.904761904761905,
+            "effective_pass": 0
+          }
+        }
+      },
+      "samples": [
+        {
+          "id": "ask-0001",
+          "kind": "final",
+          "protocol": 0.0,
+          "correctness": 0.0,
+          "total_ms": 1624.4720999966376,
+          "decode_tokens_per_second": 105.53481318564373
+        },
+        {
+          "id": "ask-0002",
+          "kind": "final",
+          "protocol": 0.0,
+          "correctness": 0.0,
+          "total_ms": 916.2494000047445,
+          "decode_tokens_per_second": 122.0733282856981
+        },
+        {
+          "id": "ask-0003",
+          "kind": "final",
+          "protocol": 1.0,
+          "correctness": 0.7970512820512821,
+          "total_ms": 880.676900036633,
+          "decode_tokens_per_second": 122.18207913686867
+        },
+        {
+          "id": "ask-0004",
+          "kind": "final",
+          "protocol": 1.0,
+          "correctness": 0.6328333333333332,
+          "total_ms": 887.8300999640487,
+          "decode_tokens_per_second": 130.28819112324308
+        },
+        {
+          "id": "ask-0005",
+          "kind": "final",
+          "protocol": 0.0,
+          "correctness": 0.0,
+          "total_ms": 1350.114000029862,
+          "decode_tokens_per_second": 105.40291815507692
+        },
+        {
+          "id": "ask-0006",
+          "kind": "final",
+          "protocol": 1.0,
+          "correctness": 0.9416666666666667,
+          "total_ms": 873.3609999762848,
+          "decode_tokens_per_second": 131.9663946780974
+        },
+        {
+          "id": "unrelated-0001",
+          "kind": "final",
+          "protocol": 1.0,
+          "correctness": 0.7833333333333333,
+          "total_ms": 862.2067000251263,
+          "decode_tokens_per_second": 124.6174716850175
+        },
+        {
+          "id": "unrelated-0002",
+          "kind": "final",
+          "protocol": 1.0,
+          "correctness": 0.7249999999999999,
+          "total_ms": 894.1471999860369,
+          "decode_tokens_per_second": 124.00255445262172
+        },
+        {
+          "id": "unrelated-0003",
+          "kind": "final",
+          "protocol": 1.0,
+          "correctness": 0.7249999999999999,
+          "total_ms": 890.4208000167273,
+          "decode_tokens_per_second": 118.9039434492845
+        },
+        {
+          "id": "unrelated-0004",
+          "kind": "final",
+          "protocol": 1.0,
+          "correctness": 0.7249999999999999,
+          "total_ms": 883.5275999736041,
+          "decode_tokens_per_second": 120.44474221061267
+        },
+        {
+          "id": "unrelated-0005",
+          "kind": "final",
+          "protocol": 1.0,
+          "correctness": 0.7249999999999999,
+          "total_ms": 955.3616999764927,
+          "decode_tokens_per_second": 111.57352137190801
+        },
+        {
+          "id": "specific-available-01-call",
+          "kind": "tool_call",
+          "protocol": 0.0,
+          "correctness": 0.0,
+          "total_ms": 1505.124400020577,
+          "decode_tokens_per_second": 104.32432095766613
+        },
+        {
+          "id": "specific-available-01-result",
+          "kind": "final",
+          "protocol": 0.0,
+          "correctness": 0.4083333333333333,
+          "total_ms": 591.3384999730624,
+          "decode_tokens_per_second": 149.02677238368324
+        },
+        {
+          "id": "specific-available-01-confirm",
+          "kind": "final",
+          "protocol": 0.0,
+          "correctness": 0.2916666666666667,
+          "total_ms": 705.0755000091158,
+          "decode_tokens_per_second": 132.54156047045734
+        },
+        {
+          "id": "specific-unavailable-01-call",
+          "kind": "tool_call",
+          "protocol": 0.0,
+          "correctness": 0.0,
+          "total_ms": 1485.8191999956034,
+          "decode_tokens_per_second": 107.46003481705128
+        },
+        {
+          "id": "specific-unavailable-01-result",
+          "kind": "final",
+          "protocol": 1.0,
+          "correctness": 0.45916666666666667,
+          "total_ms": 875.2866999711841,
+          "decode_tokens_per_second": 129.57159790573908
+        },
+        {
+          "id": "specific-unavailable-01-reselect",
+          "kind": "tool_call",
+          "protocol": 0.0,
+          "correctness": 0.7142857142857143,
+          "total_ms": 623.6471000011079,
+          "decode_tokens_per_second": 148.54498965055402
+        },
+        {
+          "id": "specific-unavailable-01-reselect-result",
+          "kind": "final",
+          "protocol": 0.0,
+          "correctness": 0.0,
+          "total_ms": 354.34419999364763,
+          "decode_tokens_per_second": 192.97382310089634
+        },
+        {
+          "id": "specific-not-found-01-call",
+          "kind": "tool_call",
+          "protocol": 0.0,
+          "correctness": 0.0,
+          "total_ms": 1310.7555999886245,
+          "decode_tokens_per_second": 122.30908684035765
+        },
+        {
+          "id": "specific-not-found-01-result",
+          "kind": "final",
+          "protocol": 1.0,
+          "correctness": 0.47630434782608694,
+          "total_ms": 834.4131999765523,
+          "decode_tokens_per_second": 133.33266666999998
+        },
+        {
+          "id": "specific-not-found-01-reselect",
+          "kind": "tool_call",
+          "protocol": 0.0,
+          "correctness": 0.7142857142857143,
+          "total_ms": 669.690000009723,
+          "decode_tokens_per_second": 145.0491859411671
+        },
+        {
+          "id": "specific-not-found-01-reselect-result",
+          "kind": "final",
+          "protocol": 0.0,
+          "correctness": 0.4083333333333333,
+          "total_ms": 609.6903999568895,
+          "decode_tokens_per_second": 140.98598002879368
+        },
+        {
+          "id": "search-matched-01-call",
+          "kind": "tool_call",
+          "protocol": 0.0,
+          "correctness": 0.0,
+          "total_ms": 1396.024799963925,
+          "decode_tokens_per_second": 117.98542452523691
+        },
+        {
+          "id": "search-matched-01-result",
+          "kind": "final",
+          "protocol": 0.0,
+          "correctness": 0.4666666666666666,
+          "total_ms": 668.621999968309,
+          "decode_tokens_per_second": 148.22878186050283
+        },
+        {
+          "id": "search-matched-01-confirm",
+          "kind": "final",
+          "protocol": 1.0,
+          "correctness": 0.4070669168230143,
+          "total_ms": 1066.9086999841966,
+          "decode_tokens_per_second": 122.28547853766331
+        },
+        {
+          "id": "search-no-match-01-call",
+          "kind": "tool_call",
+          "protocol": 0.0,
+          "correctness": 0.0,
+          "total_ms": 1417.8681000485085,
+          "decode_tokens_per_second": 115.60410740549787
+        },
+        {
+          "id": "search-no-match-01-result",
+          "kind": "final",
+          "protocol": 1.0,
+          "correctness": 0.41770114942528735,
+          "total_ms": 864.0628999564797,
+          "decode_tokens_per_second": 122.65990391109867
+        },
+        {
+          "id": "search-no-match-01-retry",
+          "kind": "tool_call",
+          "protocol": 0.0,
+          "correctness": 0.5714285714285714,
+          "total_ms": 677.4005999905057,
+          "decode_tokens_per_second": 155.93441843887368
+        },
+        {
+          "id": "search-no-match-01-retry-result",
+          "kind": "final",
+          "protocol": 0.0,
+          "correctness": 0.4083333333333333,
+          "total_ms": 609.3914000084624,
+          "decode_tokens_per_second": 142.48697827337443
+        },
+        {
+          "id": "search-single-01-call",
+          "kind": "tool_call",
+          "protocol": 0.0,
+          "correctness": 0.0,
+          "total_ms": 1298.58050000621,
+          "decode_tokens_per_second": 122.22636685293361
+        },
+        {
+          "id": "search-single-01-result",
+          "kind": "final",
+          "protocol": 0.0,
+          "correctness": 0.4083333333333333,
+          "total_ms": 714.1402999986894,
+          "decode_tokens_per_second": 142.35730348575206
+        },
+        {
+          "id": "search-single-01-confirm",
+          "kind": "final",
+          "protocol": 1.0,
+          "correctness": 0.46540025015634773,
+          "total_ms": 1163.323600019794,
+          "decode_tokens_per_second": 114.33138215321082
+        },
+        {
+          "id": "plan-modify-01-call",
+          "kind": "tool_call",
+          "protocol": 0.0,
+          "correctness": 0.7142857142857143,
+          "total_ms": 643.6190000385977,
+          "decode_tokens_per_second": 154.65904020120888
+        },
+        {
+          "id": "plan-modify-01-result",
+          "kind": "final",
+          "protocol": 0.0,
+          "correctness": 0.0,
+          "total_ms": 353.98089996306226,
+          "decode_tokens_per_second": 194.24676402549932
+        },
+        {
+          "id": "confirm-reject-01",
+          "kind": "final",
+          "protocol": 1.0,
+          "correctness": 0.552608695652174,
+          "total_ms": 873.37500002468,
+          "decode_tokens_per_second": 124.80430211488
+        },
+        {
+          "id": "multiturn-time-01-call",
+          "kind": "tool_call",
+          "protocol": 1.0,
+          "correctness": 0.0,
+          "total_ms": 866.5885999798775,
+          "decode_tokens_per_second": 127.06161390210922
+        },
+        {
+          "id": "multiturn-time-01-result",
+          "kind": "final",
+          "protocol": 0.0,
+          "correctness": 0.0,
+          "total_ms": 706.1308000120334,
+          "decode_tokens_per_second": 137.51135014318643
+        },
+        {
+          "id": "multiturn-tech-01-call",
+          "kind": "tool_call",
+          "protocol": 1.0,
+          "correctness": 0.0,
+          "total_ms": 851.2399000464939,
+          "decode_tokens_per_second": 134.35803729779116
+        },
+        {
+          "id": "multiturn-tech-01-result",
+          "kind": "final",
+          "protocol": 1.0,
+          "correctness": 0.45916666666666667,
+          "total_ms": 888.7509000487626,
+          "decode_tokens_per_second": 124.76183581650461
+        },
+        {
+          "id": "multiturn-pref-01-call",
+          "kind": "tool_call",
+          "protocol": 0.0,
+          "correctness": 0.0,
+          "total_ms": 1496.6465000179596,
+          "decode_tokens_per_second": 111.61518251457132
+        },
+        {
+          "id": "multiturn-pref-01-result",
+          "kind": "final",
+          "protocol": 0.0,
+          "correctness": 0.5249999999999999,
+          "total_ms": 782.9639000119641,
+          "decode_tokens_per_second": 123.04619582177918
+        },
+        {
+          "id": "multiturn-incomplete-01",
+          "kind": "final",
+          "protocol": 1.0,
+          "correctness": 0.7833333333333333,
+          "total_ms": 900.411400012672,
+          "decode_tokens_per_second": 118.9272759707439
+        },
+        {
+          "id": "multiturn-incomplete-02",
+          "kind": "final",
+          "protocol": 1.0,
+          "correctness": 0.8476282051282051,
+          "total_ms": 861.795799981337,
+          "decode_tokens_per_second": 132.02606571754595
+        },
+        {
+          "id": "multiturn-incomplete-03",
+          "kind": "final",
+          "protocol": 1.0,
+          "correctness": 0.6833333333333333,
+          "total_ms": 807.427900028415,
+          "decode_tokens_per_second": 127.36127809589794
+        },
+        {
+          "id": "specific-unavailable-01-confirm",
+          "kind": "final",
+          "protocol": 1.0,
+          "correctness": 0.3927011494252874,
+          "total_ms": 826.1555000208318,
+          "decode_tokens_per_second": 131.4018918545797
+        },
+        {
+          "id": "specific-not-found-01-confirm",
+          "kind": "final",
+          "protocol": 1.0,
+          "correctness": 0.509367816091954,
+          "total_ms": 870.6087000318803,
+          "decode_tokens_per_second": 118.6053246089105
+        },
+        {
+          "id": "search-no-match-01-confirm",
+          "kind": "final",
+          "protocol": 1.0,
+          "correctness": 0.4510344827586207,
+          "total_ms": 772.1718000248075,
+          "decode_tokens_per_second": 137.69080010872207
+        },
+        {
+          "id": "plan-modify-time-pref-01-call",
+          "kind": "tool_call",
+          "protocol": 0.0,
+          "correctness": 0.0,
+          "total_ms": 1330.5041000130586,
+          "decode_tokens_per_second": 119.57260823551879
+        },
+        {
+          "id": "plan-modify-time-pref-01-result",
+          "kind": "final",
+          "protocol": 0.0,
+          "correctness": 0.4083333333333333,
+          "total_ms": 584.9194000475109,
+          "decode_tokens_per_second": 146.07543984938
+        },
+        {
+          "id": "plan-modify-time-pref-01-requery",
+          "kind": "tool_call",
+          "protocol": 0.0,
+          "correctness": 0.5714285714285714,
+          "total_ms": 706.3371999538504,
+          "decode_tokens_per_second": 137.2760148772881
+        },
+        {
+          "id": "plan-modify-time-pref-01-requery-result",
+          "kind": "final",
+          "protocol": 0.0,
+          "correctness": 0.0,
+          "total_ms": 395.8529999945313,
+          "decode_tokens_per_second": 179.70932017461755
+        }
+      ]
+    },
+    "1.7b": {
+      "weights_sha256": "061b54daade076b5d3362dac252678d17da8c68f07560be70818cace6590cb1a",
+      "metrics": {
+        "samples": 51,
+        "protocol_percent": 78.43137254901961,
+        "task_correctness_percent": 68.89464364835412,
+        "effective_pass": 9,
+        "mean_latency_seconds": 1.0570854196032764,
+        "p95_seconds": 1.475077049981337,
+        "mean_ttft_seconds": 0.2528222019580996,
+        "mean_decode_tok_per_sec": 101.36690130166585,
+        "by_output_kind": {
+          "final": {
+            "samples": 36,
+            "task_correctness_percent": 67.0451896129461,
+            "effective_pass": 7
+          },
+          "tool_call": {
+            "samples": 15,
+            "task_correctness_percent": 73.33333333333333,
+            "effective_pass": 2
+          }
+        }
+      },
+      "samples": [
+        {
+          "id": "ask-0001",
+          "kind": "final",
+          "protocol": 1.0,
+          "correctness": 0.6712857142857142,
+          "total_ms": 1461.5433000144549,
+          "decode_tokens_per_second": 101.61842902056425
+        },
+        {
+          "id": "ask-0002",
+          "kind": "final",
+          "protocol": 1.0,
+          "correctness": 1.0,
+          "total_ms": 1034.5437000505626,
+          "decode_tokens_per_second": 100.81216802868107
+        },
+        {
+          "id": "ask-0003",
+          "kind": "final",
+          "protocol": 1.0,
+          "correctness": 0.7387179487179487,
+          "total_ms": 1006.0065000434406,
+          "decode_tokens_per_second": 101.73690328126946
+        },
+        {
+          "id": "ask-0004",
+          "kind": "final",
+          "protocol": 0.0,
+          "correctness": 0.0,
+          "total_ms": 838.1145999883302,
+          "decode_tokens_per_second": 97.551458394303
+        },
+        {
+          "id": "ask-0005",
+          "kind": "final",
+          "protocol": 0.0,
+          "correctness": 0.0,
+          "total_ms": 809.0905999997631,
+          "decode_tokens_per_second": 101.27678596373593
+        },
+        {
+          "id": "ask-0006",
+          "kind": "final",
+          "protocol": 1.0,
+          "correctness": 1.0,
+          "total_ms": 1044.6981000131927,
+          "decode_tokens_per_second": 101.86683712384078
+        },
+        {
+          "id": "unrelated-0001",
+          "kind": "final",
+          "protocol": 1.0,
+          "correctness": 0.7833333333333333,
+          "total_ms": 1030.2188000059687,
+          "decode_tokens_per_second": 102.73108642675274
+        },
+        {
+          "id": "unrelated-0002",
+          "kind": "final",
+          "protocol": 1.0,
+          "correctness": 0.7249999999999999,
+          "total_ms": 1009.0381999616511,
+          "decode_tokens_per_second": 102.34275355737014
+        },
+        {
+          "id": "unrelated-0003",
+          "kind": "final",
+          "protocol": 1.0,
+          "correctness": 0.7249999999999999,
+          "total_ms": 992.1158000361174,
+          "decode_tokens_per_second": 102.70367422394536
+        },
+        {
+          "id": "unrelated-0004",
+          "kind": "final",
+          "protocol": 1.0,
+          "correctness": 0.7249999999999999,
+          "total_ms": 1050.8909999625757,
+          "decode_tokens_per_second": 102.12977046334089
+        },
+        {
+          "id": "unrelated-0005",
+          "kind": "final",
+          "protocol": 1.0,
+          "correctness": 0.8416666666666666,
+          "total_ms": 1061.4142999984324,
+          "decode_tokens_per_second": 102.43989887718554
+        },
+        {
+          "id": "specific-available-01-call",
+          "kind": "tool_call",
+          "protocol": 1.0,
+          "correctness": 0.8571428571428571,
+          "total_ms": 817.5467000110075,
+          "decode_tokens_per_second": 99.53616148746839
+        },
+        {
+          "id": "specific-available-01-result",
+          "kind": "final",
+          "protocol": 1.0,
+          "correctness": 0.8971780303030302,
+          "total_ms": 1497.6448999950662,
+          "decode_tokens_per_second": 101.4074543402796
+        },
+        {
+          "id": "specific-available-01-confirm",
+          "kind": "final",
+          "protocol": 1.0,
+          "correctness": 0.9748124999999999,
+          "total_ms": 1314.1300000133924,
+          "decode_tokens_per_second": 101.70382152109366
+        },
+        {
+          "id": "specific-unavailable-01-call",
+          "kind": "tool_call",
+          "protocol": 1.0,
+          "correctness": 0.7142857142857143,
+          "total_ms": 832.5964999967255,
+          "decode_tokens_per_second": 101.93991661314821
+        },
+        {
+          "id": "specific-unavailable-01-result",
+          "kind": "final",
+          "protocol": 1.0,
+          "correctness": 0.5834615384615384,
+          "total_ms": 1353.6305000307038,
+          "decode_tokens_per_second": 101.6267539688877
+        },
+        {
+          "id": "specific-unavailable-01-reselect",
+          "kind": "tool_call",
+          "protocol": 0.0,
+          "correctness": 0.7142857142857143,
+          "total_ms": 855.5691000074148,
+          "decode_tokens_per_second": 100.88664475827726
+        },
+        {
+          "id": "specific-unavailable-01-reselect-result",
+          "kind": "final",
+          "protocol": 0.0,
+          "correctness": 0.0,
+          "total_ms": 408.29870000015944,
+          "decode_tokens_per_second": 98.37073470642484
+        },
+        {
+          "id": "specific-not-found-01-call",
+          "kind": "tool_call",
+          "protocol": 1.0,
+          "correctness": 0.7142857142857143,
+          "total_ms": 823.1849999865517,
+          "decode_tokens_per_second": 101.7031102811841
+        },
+        {
+          "id": "specific-not-found-01-result",
+          "kind": "final",
+          "protocol": 1.0,
+          "correctness": 0.7436021505376343,
+          "total_ms": 1258.2195999566466,
+          "decode_tokens_per_second": 100.32565708289107
+        },
+        {
+          "id": "specific-not-found-01-reselect",
+          "kind": "tool_call",
+          "protocol": 0.0,
+          "correctness": 0.7142857142857143,
+          "total_ms": 848.5747999511659,
+          "decode_tokens_per_second": 101.32856701472754
+        },
+        {
+          "id": "specific-not-found-01-reselect-result",
+          "kind": "final",
+          "protocol": 1.0,
+          "correctness": 0.8420537634408601,
+          "total_ms": 1466.245399962645,
+          "decode_tokens_per_second": 101.00023345955604
+        },
+        {
+          "id": "search-matched-01-call",
+          "kind": "tool_call",
+          "protocol": 1.0,
+          "correctness": 0.8571428571428571,
+          "total_ms": 795.3990999958478,
+          "decode_tokens_per_second": 103.45686199556013
+        },
+        {
+          "id": "search-matched-01-result",
+          "kind": "final",
+          "protocol": 1.0,
+          "correctness": 0.9054334677419354,
+          "total_ms": 1383.6154999444261,
+          "decode_tokens_per_second": 101.19346694977374
+        },
+        {
+          "id": "search-matched-01-confirm",
+          "kind": "final",
+          "protocol": 1.0,
+          "correctness": 0.9748124999999999,
+          "total_ms": 1304.9164999974892,
+          "decode_tokens_per_second": 102.35259331144758
+        },
+        {
+          "id": "search-no-match-01-call",
+          "kind": "tool_call",
+          "protocol": 1.0,
+          "correctness": 0.8571428571428571,
+          "total_ms": 809.8792000091635,
+          "decode_tokens_per_second": 101.79293591530829
+        },
+        {
+          "id": "search-no-match-01-result",
+          "kind": "final",
+          "protocol": 1.0,
+          "correctness": 0.709367816091954,
+          "total_ms": 1215.666499978397,
+          "decode_tokens_per_second": 100.59967998712324
+        },
+        {
+          "id": "search-no-match-01-retry",
+          "kind": "tool_call",
+          "protocol": 0.0,
+          "correctness": 0.7142857142857143,
+          "total_ms": 848.5737999435514,
+          "decode_tokens_per_second": 100.41656678997388
+        },
+        {
+          "id": "search-no-match-01-retry-result",
+          "kind": "final",
+          "protocol": 1.0,
+          "correctness": 0.9784606835232008,
+          "total_ms": 1358.6647000047378,
+          "decode_tokens_per_second": 99.91195259177849
+        },
+        {
+          "id": "search-single-01-call",
+          "kind": "tool_call",
+          "protocol": 1.0,
+          "correctness": 1.0,
+          "total_ms": 872.7897999924608,
+          "decode_tokens_per_second": 101.4425125281503
+        },
+        {
+          "id": "search-single-01-result",
+          "kind": "final",
+          "protocol": 1.0,
+          "correctness": 0.8456378852827107,
+          "total_ms": 1735.0662999670021,
+          "decode_tokens_per_second": 104.63406280169148
+        },
+        {
+          "id": "search-single-01-confirm",
+          "kind": "final",
+          "protocol": 1.0,
+          "correctness": 0.9746627565982404,
+          "total_ms": 1308.024399972055,
+          "decode_tokens_per_second": 103.10727843651874
+        },
+        {
+          "id": "plan-modify-01-call",
+          "kind": "tool_call",
+          "protocol": 0.0,
+          "correctness": 0.7142857142857143,
+          "total_ms": 848.194100020919,
+          "decode_tokens_per_second": 102.54272333300834
+        },
+        {
+          "id": "plan-modify-01-result",
+          "kind": "final",
+          "protocol": 0.0,
+          "correctness": 0.0,
+          "total_ms": 501.44550000550225,
+          "decode_tokens_per_second": 96.86935846065784
+        },
+        {
+          "id": "confirm-reject-01",
+          "kind": "final",
+          "protocol": 1.0,
+          "correctness": 0.6261111111111111,
+          "total_ms": 1168.0072999442928,
+          "decode_tokens_per_second": 103.01678207765534
+        },
+        {
+          "id": "multiturn-time-01-call",
+          "kind": "tool_call",
+          "protocol": 1.0,
+          "correctness": 0.0,
+          "total_ms": 1309.260500012897,
+          "decode_tokens_per_second": 101.38426387190191
+        },
+        {
+          "id": "multiturn-time-01-result",
+          "kind": "final",
+          "protocol": 1.0,
+          "correctness": 0.8475396825396825,
+          "total_ms": 1318.865699984599,
+          "decode_tokens_per_second": 102.88469992274295
+        },
+        {
+          "id": "multiturn-tech-01-call",
+          "kind": "tool_call",
+          "protocol": 1.0,
+          "correctness": 1.0,
+          "total_ms": 793.9179000095464,
+          "decode_tokens_per_second": 102.26156745825348
+        },
+        {
+          "id": "multiturn-tech-01-result",
+          "kind": "final",
+          "protocol": 1.0,
+          "correctness": 0.5837923076923076,
+          "total_ms": 1360.8856999780983,
+          "decode_tokens_per_second": 101.87598663680753
+        },
+        {
+          "id": "multiturn-pref-01-call",
+          "kind": "tool_call",
+          "protocol": 1.0,
+          "correctness": 0.7142857142857143,
+          "total_ms": 809.9511000327766,
+          "decode_tokens_per_second": 103.96091069757772
+        },
+        {
+          "id": "multiturn-pref-01-result",
+          "kind": "final",
+          "protocol": 1.0,
+          "correctness": 0.9058206958073148,
+          "total_ms": 1315.1255999691784,
+          "decode_tokens_per_second": 103.33473285178727
+        },
+        {
+          "id": "multiturn-incomplete-01",
+          "kind": "final",
+          "protocol": 1.0,
+          "correctness": 1.0,
+          "total_ms": 1152.087800030131,
+          "decode_tokens_per_second": 101.03127132807757
+        },
+        {
+          "id": "multiturn-incomplete-02",
+          "kind": "final",
+          "protocol": 0.0,
+          "correctness": 0.0,
+          "total_ms": 651.6474000527523,
+          "decode_tokens_per_second": 103.62743112308583
+        },
+        {
+          "id": "multiturn-incomplete-03",
+          "kind": "final",
+          "protocol": 1.0,
+          "correctness": 0.7133999999999999,
+          "total_ms": 1099.3512999848463,
+          "decode_tokens_per_second": 104.15996161295797
+        },
+        {
+          "id": "specific-unavailable-01-confirm",
+          "kind": "final",
+          "protocol": 1.0,
+          "correctness": 0.6843678160919541,
+          "total_ms": 1214.5278999814764,
+          "decode_tokens_per_second": 99.30527683414778
+        },
+        {
+          "id": "specific-not-found-01-confirm",
+          "kind": "final",
+          "protocol": 1.0,
+          "correctness": 0.509367816091954,
+          "total_ms": 1054.0067999972962,
+          "decode_tokens_per_second": 98.35597979768175
+        },
+        {
+          "id": "search-no-match-01-confirm",
+          "kind": "final",
+          "protocol": 1.0,
+          "correctness": 0.7427011494252873,
+          "total_ms": 1170.027099957224,
+          "decode_tokens_per_second": 102.81051481012521
+        },
+        {
+          "id": "plan-modify-time-pref-01-call",
+          "kind": "tool_call",
+          "protocol": 1.0,
+          "correctness": 0.8571428571428571,
+          "total_ms": 778.1496000243351,
+          "decode_tokens_per_second": 104.14406595790844
+        },
+        {
+          "id": "plan-modify-time-pref-01-result",
+          "kind": "final",
+          "protocol": 1.0,
+          "correctness": 0.8836809269162209,
+          "total_ms": 1483.908700000029,
+          "decode_tokens_per_second": 100.62095201910026
+        },
+        {
+          "id": "plan-modify-time-pref-01-requery",
+          "kind": "tool_call",
+          "protocol": 0.0,
+          "correctness": 0.5714285714285714,
+          "total_ms": 924.5765000232495,
+          "decode_tokens_per_second": 94.26028504899325
+        },
+        {
+          "id": "plan-modify-time-pref-01-requery-result",
+          "kind": "final",
+          "protocol": 0.0,
+          "correctness": 0.0,
+          "total_ms": 511.50799996685237,
+          "decode_tokens_per_second": 97.3184706402339
+        }
+      ]
+    },
+    "4b": {
+      "weights_sha256": "8c2f07f26af9747e41988551106f149b03eb9b5cb6df636027b6bf6278473300",
+      "metrics": {
+        "samples": 51,
+        "protocol_percent": 90.19607843137256,
+        "task_correctness_percent": 80.01075467436219,
+        "effective_pass": 28,
+        "mean_latency_seconds": 2.153857117642046,
+        "p95_seconds": 2.745345899980748,
+        "mean_ttft_seconds": 0.27863711960426546,
+        "mean_decode_tok_per_sec": 49.463860671954116,
+        "by_output_kind": {
+          "final": {
+            "samples": 36,
+            "task_correctness_percent": 91.52317229661628,
+            "effective_pass": 21
+          },
+          "tool_call": {
+            "samples": 15,
+            "task_correctness_percent": 52.38095238095239,
+            "effective_pass": 7
+          }
+        }
+      },
+      "samples": [
+        {
+          "id": "ask-0001",
+          "kind": "final",
+          "protocol": 1.0,
+          "correctness": 0.9781547619047619,
+          "total_ms": 2827.754400030244,
+          "decode_tokens_per_second": 49.6913332277586
+        },
+        {
+          "id": "ask-0002",
+          "kind": "final",
+          "protocol": 1.0,
+          "correctness": 1.0,
+          "total_ms": 1849.561300012283,
+          "decode_tokens_per_second": 49.40735873200954
+        },
+        {
+          "id": "ask-0003",
+          "kind": "final",
+          "protocol": 1.0,
+          "correctness": 0.9841544401544401,
+          "total_ms": 2148.842499998864,
+          "decode_tokens_per_second": 49.07574022574841
+        },
+        {
+          "id": "ask-0004",
+          "kind": "final",
+          "protocol": 1.0,
+          "correctness": 0.9842045454545454,
+          "total_ms": 2290.925699984655,
+          "decode_tokens_per_second": 49.097655236264934
+        },
+        {
+          "id": "ask-0005",
+          "kind": "final",
+          "protocol": 1.0,
+          "correctness": 1.0,
+          "total_ms": 2170.057699957397,
+          "decode_tokens_per_second": 49.31785617874868
+        },
+        {
+          "id": "ask-0006",
+          "kind": "final",
+          "protocol": 1.0,
+          "correctness": 1.0,
+          "total_ms": 1903.573999996297,
+          "decode_tokens_per_second": 49.81366575652949
+        },
+        {
+          "id": "unrelated-0001",
+          "kind": "final",
+          "protocol": 1.0,
+          "correctness": 1.0,
+          "total_ms": 1621.8639999860898,
+          "decode_tokens_per_second": 50.199147188202346
+        },
+        {
+          "id": "unrelated-0002",
+          "kind": "final",
+          "protocol": 1.0,
+          "correctness": 1.0,
+          "total_ms": 1621.90530000953,
+          "decode_tokens_per_second": 50.053700470075746
+        },
+        {
+          "id": "unrelated-0003",
+          "kind": "final",
+          "protocol": 1.0,
+          "correctness": 1.0,
+          "total_ms": 1627.978999982588,
+          "decode_tokens_per_second": 49.67015469414893
+        },
+        {
+          "id": "unrelated-0004",
+          "kind": "final",
+          "protocol": 1.0,
+          "correctness": 1.0,
+          "total_ms": 1662.4537999741733,
+          "decode_tokens_per_second": 49.43907834257609
+        },
+        {
+          "id": "unrelated-0005",
+          "kind": "final",
+          "protocol": 1.0,
+          "correctness": 1.0,
+          "total_ms": 1665.2634000056423,
+          "decode_tokens_per_second": 49.353608735870765
+        },
+        {
+          "id": "specific-available-01-call",
+          "kind": "tool_call",
+          "protocol": 1.0,
+          "correctness": 1.0,
+          "total_ms": 1473.7760999705642,
+          "decode_tokens_per_second": 48.960247543011576
+        },
+        {
+          "id": "specific-available-01-result",
+          "kind": "final",
+          "protocol": 1.0,
+          "correctness": 0.9425907258064515,
+          "total_ms": 2731.7667999886908,
+          "decode_tokens_per_second": 49.60435403242403
+        },
+        {
+          "id": "specific-available-01-confirm",
+          "kind": "final",
+          "protocol": 1.0,
+          "correctness": 0.9726470588235294,
+          "total_ms": 2470.297100022435,
+          "decode_tokens_per_second": 49.34575749849907
+        },
+        {
+          "id": "specific-unavailable-01-call",
+          "kind": "tool_call",
+          "protocol": 1.0,
+          "correctness": 1.0,
+          "total_ms": 1373.2347000041045,
+          "decode_tokens_per_second": 49.87432529926745
+        },
+        {
+          "id": "specific-unavailable-01-result",
+          "kind": "final",
+          "protocol": 1.0,
+          "correctness": 0.9050641025641025,
+          "total_ms": 2677.144000015687,
+          "decode_tokens_per_second": 49.256025305909134
+        },
+        {
+          "id": "specific-unavailable-01-reselect",
+          "kind": "tool_call",
+          "protocol": 0.0,
+          "correctness": 0.0,
+          "total_ms": 2330.8526999899186,
+          "decode_tokens_per_second": 49.07358879080714
+        },
+        {
+          "id": "specific-unavailable-01-reselect-result",
+          "kind": "final",
+          "protocol": 1.0,
+          "correctness": 0.9667207792207791,
+          "total_ms": 2330.03449998796,
+          "decode_tokens_per_second": 49.31696010257928
+        },
+        {
+          "id": "specific-not-found-01-call",
+          "kind": "tool_call",
+          "protocol": 1.0,
+          "correctness": 1.0,
+          "total_ms": 1397.103600029368,
+          "decode_tokens_per_second": 49.6469077680291
+        },
+        {
+          "id": "specific-not-found-01-result",
+          "kind": "final",
+          "protocol": 1.0,
+          "correctness": 0.8451072881982982,
+          "total_ms": 2746.2221999885514,
+          "decode_tokens_per_second": 49.34081084486555
+        },
+        {
+          "id": "specific-not-found-01-reselect",
+          "kind": "tool_call",
+          "protocol": 1.0,
+          "correctness": 0.0,
+          "total_ms": 2326.148599968292,
+          "decode_tokens_per_second": 49.411494566915515
+        },
+        {
+          "id": "specific-not-found-01-reselect-result",
+          "kind": "final",
+          "protocol": 1.0,
+          "correctness": 0.9546846153846154,
+          "total_ms": 2586.954300000798,
+          "decode_tokens_per_second": 49.50323720505599
+        },
+        {
+          "id": "search-matched-01-call",
+          "kind": "tool_call",
+          "protocol": 1.0,
+          "correctness": 1.0,
+          "total_ms": 1441.4654000429437,
+          "decode_tokens_per_second": 49.47970828776728
+        },
+        {
+          "id": "search-matched-01-result",
+          "kind": "final",
+          "protocol": 1.0,
+          "correctness": 0.9763548387096774,
+          "total_ms": 2742.082099954132,
+          "decode_tokens_per_second": 49.604747743593876
+        },
+        {
+          "id": "search-matched-01-confirm",
+          "kind": "final",
+          "protocol": 1.0,
+          "correctness": 0.9727859237536656,
+          "total_ms": 2490.916599985212,
+          "decode_tokens_per_second": 49.46303114900352
+        },
+        {
+          "id": "search-no-match-01-call",
+          "kind": "tool_call",
+          "protocol": 1.0,
+          "correctness": 1.0,
+          "total_ms": 1418.2278999942355,
+          "decode_tokens_per_second": 49.79646748923679
+        },
+        {
+          "id": "search-no-match-01-result",
+          "kind": "final",
+          "protocol": 1.0,
+          "correctness": 0.9407701457032411,
+          "total_ms": 2434.7543999901973,
+          "decode_tokens_per_second": 49.61798829951664
+        },
+        {
+          "id": "search-no-match-01-retry",
+          "kind": "tool_call",
+          "protocol": 1.0,
+          "correctness": 0.0,
+          "total_ms": 2520.3685000305995,
+          "decode_tokens_per_second": 49.34322390843676
+        },
+        {
+          "id": "search-no-match-01-retry-result",
+          "kind": "final",
+          "protocol": 1.0,
+          "correctness": 0.9679761904761903,
+          "total_ms": 2516.1421000375412,
+          "decode_tokens_per_second": 49.21079874544067
+        },
+        {
+          "id": "search-single-01-call",
+          "kind": "tool_call",
+          "protocol": 1.0,
+          "correctness": 0.0,
+          "total_ms": 2505.107400007546,
+          "decode_tokens_per_second": 49.815616093529925
+        },
+        {
+          "id": "search-single-01-result",
+          "kind": "final",
+          "protocol": 1.0,
+          "correctness": 0.9429340659340659,
+          "total_ms": 2738.546899985522,
+          "decode_tokens_per_second": 49.27097284110682
+        },
+        {
+          "id": "search-single-01-confirm",
+          "kind": "final",
+          "protocol": 1.0,
+          "correctness": 0.9727022058823529,
+          "total_ms": 2521.2599000078626,
+          "decode_tokens_per_second": 49.43393688755917
+        },
+        {
+          "id": "plan-modify-01-call",
+          "kind": "tool_call",
+          "protocol": 1.0,
+          "correctness": 0.0,
+          "total_ms": 2442.803999991156,
+          "decode_tokens_per_second": 49.63642478573996
+        },
+        {
+          "id": "plan-modify-01-result",
+          "kind": "final",
+          "protocol": 0.0,
+          "correctness": 0.0,
+          "total_ms": 736.3162999972701,
+          "decode_tokens_per_second": 49.53370768808174
+        },
+        {
+          "id": "confirm-reject-01",
+          "kind": "final",
+          "protocol": 1.0,
+          "correctness": 0.9061666666666666,
+          "total_ms": 2187.118500005454,
+          "decode_tokens_per_second": 49.16766543994222
+        },
+        {
+          "id": "multiturn-time-01-call",
+          "kind": "tool_call",
+          "protocol": 1.0,
+          "correctness": 0.0,
+          "total_ms": 2539.3754999968223,
+          "decode_tokens_per_second": 49.07887868147362
+        },
+        {
+          "id": "multiturn-time-01-result",
+          "kind": "final",
+          "protocol": 1.0,
+          "correctness": 0.9440120967741935,
+          "total_ms": 2730.0920999841765,
+          "decode_tokens_per_second": 49.57389174466636
+        },
+        {
+          "id": "multiturn-tech-01-call",
+          "kind": "tool_call",
+          "protocol": 1.0,
+          "correctness": 0.8571428571428571,
+          "total_ms": 1431.8125999998301,
+          "decode_tokens_per_second": 49.198113167535695
+        },
+        {
+          "id": "multiturn-tech-01-result",
+          "kind": "final",
+          "protocol": 1.0,
+          "correctness": 0.8466375071469411,
+          "total_ms": 2692.965299997013,
+          "decode_tokens_per_second": 49.44236080209636
+        },
+        {
+          "id": "multiturn-pref-01-call",
+          "kind": "tool_call",
+          "protocol": 1.0,
+          "correctness": 1.0,
+          "total_ms": 1463.137499988079,
+          "decode_tokens_per_second": 49.14152258760934
+        },
+        {
+          "id": "multiturn-pref-01-result",
+          "kind": "final",
+          "protocol": 1.0,
+          "correctness": 0.9440516647531573,
+          "total_ms": 2744.4695999729447,
+          "decode_tokens_per_second": 49.78051688498008
+        },
+        {
+          "id": "multiturn-incomplete-01",
+          "kind": "final",
+          "protocol": 1.0,
+          "correctness": 1.0,
+          "total_ms": 2163.2978999987245,
+          "decode_tokens_per_second": 49.37864331652183
+        },
+        {
+          "id": "multiturn-incomplete-02",
+          "kind": "final",
+          "protocol": 1.0,
+          "correctness": 1.0,
+          "total_ms": 1914.3234000075608,
+          "decode_tokens_per_second": 49.82772973925513
+        },
+        {
+          "id": "multiturn-incomplete-03",
+          "kind": "final",
+          "protocol": 1.0,
+          "correctness": 1.0,
+          "total_ms": 2203.289399971254,
+          "decode_tokens_per_second": 49.484089302633755
+        },
+        {
+          "id": "specific-unavailable-01-confirm",
+          "kind": "final",
+          "protocol": 0.0,
+          "correctness": 0.6833333333333333,
+          "total_ms": 2038.3680000086315,
+          "decode_tokens_per_second": 49.35635343914503
+        },
+        {
+          "id": "specific-not-found-01-confirm",
+          "kind": "final",
+          "protocol": 0.0,
+          "correctness": 0.7416666666666666,
+          "total_ms": 2033.397099992726,
+          "decode_tokens_per_second": 49.72286646038344
+        },
+        {
+          "id": "search-no-match-01-confirm",
+          "kind": "final",
+          "protocol": 0.0,
+          "correctness": 0.7999999999999999,
+          "total_ms": 2072.1330999513157,
+          "decode_tokens_per_second": 49.30147018091978
+        },
+        {
+          "id": "plan-modify-time-pref-01-call",
+          "kind": "tool_call",
+          "protocol": 1.0,
+          "correctness": 1.0,
+          "total_ms": 1434.8374999826774,
+          "decode_tokens_per_second": 49.846307219406825
+        },
+        {
+          "id": "plan-modify-time-pref-01-result",
+          "kind": "final",
+          "protocol": 1.0,
+          "correctness": 0.9428267045454545,
+          "total_ms": 2770.1289000106044,
+          "decode_tokens_per_second": 48.95885554426669
+        },
+        {
+          "id": "plan-modify-time-pref-01-requery",
+          "kind": "tool_call",
+          "protocol": 1.0,
+          "correctness": 0.0,
+          "total_ms": 2522.610599990003,
+          "decode_tokens_per_second": 49.50145286764166
+        },
+        {
+          "id": "plan-modify-time-pref-01-requery-result",
+          "kind": "final",
+          "protocol": 1.0,
+          "correctness": 0.8327956989247312,
+          "total_ms": 2563.648799958173,
+          "decode_tokens_per_second": 49.236545226871804
+        }
+      ]
+    }
+  }
+}
